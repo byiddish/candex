@@ -1,0 +1,200 @@
+﻿@section scripts{
+    @Scripts.Render("~/bundles/order")
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <form method="get" action="/" class="form-horizontal">
+                        <div class="card-header card-header-text" data-background-color="green">
+                            <h4 class="card-title">Products</h4>
+                        </div>
+                        <div class="card-content" data-bind="foreach: people">
+                            <div class="row">
+                                <label class="col-sm-2 label-on-left">Qty</label>
+                                <div class="col-sm-10">
+                                    <div class="form-group label-floating is-empty">
+                                        <label class="control-label"></label>
+                                        <input type="text" class="form-control" data-bind="value: name">
+                                        <span class="material-input"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-2 label-on-left">Profile #</label>
+                                <div class="col-sm-10">
+                                    <div class="form-group label-floating is-empty">
+                                        <label class="control-label"></label>
+                                        <select class="form-control" data-bind="options: profileNum, optionsCaption: 'Choose...'"></select>
+                                        <span class="material-input"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-2 label-on-left">Item #</label>
+                                <div class="col-sm-10">
+                                    <div class="form-group label-floating is-empty">
+                                        <label class="control-label"></label>
+                                        <select class="form-control" data-bind="options: itemNum, optionsCaption: 'Choose...'"></select>
+                                        <span class="material-input"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-2 label-on-left">Color</label>
+                                <div class="col-sm-10">
+                                    <div class="form-group label-floating is-empty">
+                                        <label class="control-label"></label>
+                                        <select class="form-control" data-bind="options: color, optionsCaption: 'Choose...'"></select>
+                                        <span class="material-input"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-2 label-on-left">Item #</label>
+                                <div class="col-sm-10">
+                                    <div class="form-group label-floating is-empty">
+                                        <label class="control-label"></label>
+                                        <textarea class="form-control" placeholder="Item Description" data-bind="value: itemDescription"></textarea>
+                                        <span class="material-input"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-2 label-on-left">Price</label>
+                                <div class="col-sm-10">
+                                    <div class="form-group label-floating is-empty">
+                                        <label class="control-label"></label>
+                                        <input class="form-control" placeholder="Price" type="number" data-bind="value: price">
+                                        <span class="material-input"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-2 label-on-left"></label>
+                                <div class="col-sm-10">
+                                    <h2 class="right">Total: $<span data-bind="text: total"></span></h2>
+                                    <a data-bind="click: addProduct">Add</a>
+                                    <button class="btn btn-round addProduct" data-bind="click: $root.addProduct">Add Product</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <form method="get" action="/" class="form-horizontal">
+                        <div class="card-header card-header-text" data-background-color="green">
+                            <h4 class="card-title">Order Details</h4>
+                        </div>
+                        <div class="card-content">
+                            <div class="row">
+                                <label class="col-sm-2 label-on-left">Qty</label>
+                                <div class="col-sm-10">
+                                    <div class="form-group label-floating is-empty">
+                                        <label class="control-label"></label>
+                                        <input type="text" class="form-control" value="">
+                                        <span class="material-input"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-2 label-on-left">Profile #</label>
+                                <div class="col-sm-10">
+                                    <div class="form-group label-floating is-empty">
+                                        <label class="control-label"></label>
+                                        <select class="form-control" value="">
+                                            <option>Red</option>
+                                            <option>Green</option>
+                                            <option>Yellow</option>
+                                            <option>Red</option>
+                                            <option>Green</option>
+                                            <option>Yellow</option>
+                                            <option>Red</option>
+                                            <option>Green</option>
+                                            <option>Yellow</option>
+                                        </select>
+                                        <span class="material-input"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-2 label-on-left">Item #</label>
+                                <div class="col-sm-10">
+                                    <div class="form-group label-floating is-empty">
+                                        <label class="control-label"></label>
+                                        <select class="form-control" value="">
+                                            <option>Red</option>
+                                            <option>Green</option>
+                                            <option>Yellow</option>
+                                            <option>Red</option>
+                                            <option>Green</option>
+                                            <option>Yellow</option>
+                                            <option>Red</option>
+                                            <option>Green</option>
+                                            <option>Yellow</option>
+                                        </select>
+                                        <span class="material-input"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-2 label-on-left">Color</label>
+                                <div class="col-sm-10">
+                                    <div class="form-group label-floating is-empty">
+                                        <label class="control-label"></label>
+                                        <select class="form-control" value="">
+                                            <option>Red</option>
+                                            <option>Green</option>
+                                            <option>Yellow</option>
+                                            <option>Red</option>
+                                            <option>Green</option>
+                                            <option>Yellow</option>
+                                            <option>Red</option>
+                                            <option>Green</option>
+                                            <option>Yellow</option>
+                                        </select>
+                                        <span class="material-input"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-2 label-on-left">Item #</label>
+                                <div class="col-sm-10">
+                                    <div class="form-group label-floating is-empty">
+                                        <label class="control-label"></label>
+                                        <textarea class="form-control" placeholder="Item Description" value=""></textarea>
+                                        <span class="material-input"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-2 label-on-left">Price</label>
+                                <div class="col-sm-10">
+                                    <div class="form-group label-floating is-empty">
+                                        <label class="control-label"></label>
+                                        <input class="form-control" placeholder="Price" value="">
+                                        <span class="material-input"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label class="col-sm-2 label-on-left"></label>
+                                <div class="col-sm-10">
+                                    <h2 class="right">Total: $0.00</h2>
+                                    <button class="btn btn-round addProduct">Add Product</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

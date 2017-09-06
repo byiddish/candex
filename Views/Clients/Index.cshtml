@@ -1,0 +1,673 @@
+﻿<div class="main-panel ps-container ps-theme-default ps-active-y" data-ps-id="a5c4626e-a899-90d6-62af-b0c2fe7cdb05">
+    <nav class="navbar navbar-transparent navbar-absolute">
+        <div class="container-fluid">
+            <div class="navbar-minimize">
+                <button id="minimizeSidebar" class="btn btn-round btn-white btn-fill btn-just-icon">
+                    <i class="material-icons visible-on-sidebar-regular">more_vert</i>
+                    <i class="material-icons visible-on-sidebar-mini">view_list</i>
+                </button>
+            </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"> DataTables.net </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="material-icons">dashboard</i>
+                            <p class="hidden-lg hidden-md">Dashboard</p>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="material-icons">notifications</i>
+                            <span class="notification">5</span>
+                            <p class="hidden-lg hidden-md">
+                                Notifications
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Mike John responded to your email</a>
+                            </li>
+                            <li>
+                                <a href="#">You have 5 new tasks</a>
+                            </li>
+                            <li>
+                                <a href="#">You're now friend with Andrew</a>
+                            </li>
+                            <li>
+                                <a href="#">Another Notification</a>
+                            </li>
+                            <li>
+                                <a href="#">Another One</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="material-icons">person</i>
+                            <p class="hidden-lg hidden-md">Profile</p>
+                        </a>
+                    </li>
+                    <li class="separator hidden-lg hidden-md"></li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group form-search is-empty">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="material-input"></span>
+                        <span class="material-input"></span>
+                    </div>
+                    <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                        <i class="material-icons">search</i>
+                        <div class="ripple-container"></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header card-header-icon" data-background-color="purple">
+                            <i class="material-icons">people</i>
+                        </div>
+                        <div class="card-content">
+                            <h4 class="card-title">Clients</h4>
+                            <div class="toolbar">
+                                <!--        Here you can write extra buttons/actions for the toolbar              -->
+                            </div>
+                            <div class="material-datatables">
+                                <div id="datatables_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                                    <div class="row"><div class="col-sm-6"><div class="dataTables_length" id="datatables_length"><label class="form-group">Show <select name="datatables_length" aria-controls="datatables" class="form-control input-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="-1">All</option></select> entries</label></div></div><div class="col-sm-6"><div id="datatables_filter" class="dataTables_filter"><label class="form-group"><input type="search" class="form-control input-sm" placeholder="Search records" aria-controls="datatables"></label></div></div></div><div class="row">
+                                        <div class="col-sm-12">
+                                            <table id="datatables" class="table table-striped table-no-bordered table-hover dataTable dtr-inline" cellspacing="0" width="100%" style="width: 100%;" role="grid" aria-describedby="datatables_info">
+                                                <thead>
+                                                    <tr role="row"><th class="sorting_desc" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" style="width: 185px;" aria-label="Name: activate to sort column ascending" aria-sort="descending">Name</th><th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" style="width: 283px;" aria-label="Position: activate to sort column ascending">Position</th><th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" style="width: 142px;" aria-label="Office: activate to sort column ascending">Office</th><th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" style="width: 68px;" aria-label="Age: activate to sort column ascending">Age</th><th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" style="width: 112px;" aria-label="Date: activate to sort column ascending">Date</th><th class="disabled-sorting text-right sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" style="width: 328px;" aria-label="Actions: activate to sort column ascending">Actions</th></tr>
+                                                </thead>
+                                                <tfoot>
+                                                    <tr><th rowspan="1" colspan="1">Name</th><th rowspan="1" colspan="1" style="">Position</th><th rowspan="1" colspan="1" style="">Office</th><th rowspan="1" colspan="1" style="">Age</th><th rowspan="1" colspan="1" style="">Start date</th><th class="text-right" rowspan="1" colspan="1" style="">Actions</th></tr>
+                                                </tfoot>
+                                                <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                    <tr role="row" class="odd">
+                                                        <td class="sorting_1" tabindex="0" style="">Yuri Berry</td>
+                                                        <td class="" style="">Chief Marketing Officer (CMO)</td>
+                                                        <td class="" style="">New York</td>
+                                                        <td style="">40</td>
+                                                        <td style="">2009/06/25</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td class="sorting_1" tabindex="0" style="">Vivian Harrell</td>
+                                                        <td class="" style="">Financial Controller</td>
+                                                        <td class="" style="">San Francisco</td>
+                                                        <td style="">62</td>
+                                                        <td style="">2009/02/14</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td class="sorting_1" tabindex="0">Unity Butler</td>
+                                                        <td class="" style="">Marketing Designer</td>
+                                                        <td class="" style="">San Francisco</td>
+                                                        <td style="">47</td>
+                                                        <td style="">2009/12/09</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td class="sorting_1" tabindex="0">Timothy Mooney</td>
+                                                        <td class="" style="">Office Manager</td>
+                                                        <td class="" style="">London</td>
+                                                        <td style="">37</td>
+                                                        <td style="">2008/12/11</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td tabindex="0" class="sorting_1">Tiger Nixon</td>
+                                                        <td class="" style="">System Architect</td>
+                                                        <td class="" style="">Edinburgh</td>
+                                                        <td style="">61</td>
+                                                        <td style="">2011/04/25</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td class="sorting_1" tabindex="0">Tatyana Fitzpatrick</td>
+                                                        <td class="" style="">Regional Director</td>
+                                                        <td class="" style="">London</td>
+                                                        <td style="">19</td>
+                                                        <td style="">2010/03/17</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td class="sorting_1" tabindex="0">Suki Burks</td>
+                                                        <td class="" style="">Developer</td>
+                                                        <td class="" style="">London</td>
+                                                        <td style="">53</td>
+                                                        <td style="">2009/10/22</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td tabindex="0" class="sorting_1">Sonya Frost</td>
+                                                        <td class="" style="">Software Engineer</td>
+                                                        <td class="" style="">Edinburgh</td>
+                                                        <td style="">23</td>
+                                                        <td style="">2008/12/13</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td class="sorting_1" tabindex="0">Shou Itou</td>
+                                                        <td class="" style="">Regional Marketing</td>
+                                                        <td class="" style="">Tokyo</td>
+                                                        <td style="">20</td>
+                                                        <td style="">2011/08/14</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td tabindex="0" class="sorting_1">Rhona Davidson</td>
+                                                        <td class="" style="">Integration Specialist</td>
+                                                        <td class="" style="">Tokyo</td>
+                                                        <td style="">55</td>
+                                                        <td style="">2010/10/14</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td class="sorting_1" tabindex="0">Quinn Flynn</td>
+                                                        <td class="" style="">Support Lead</td>
+                                                        <td class="" style="">Edinburgh</td>
+                                                        <td style="">22</td>
+                                                        <td style="">2013/03/03</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td class="sorting_1" tabindex="0">Prescott Bartlett</td>
+                                                        <td class="" style="">Technical Author</td>
+                                                        <td class="" style="">London</td>
+                                                        <td style="">27</td>
+                                                        <td style="">2011/05/07</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td class="sorting_1" tabindex="0">Paul Byrd</td>
+                                                        <td class="" style="">Chief Financial Officer (CFO)</td>
+                                                        <td class="" style="">New York</td>
+                                                        <td style="">64</td>
+                                                        <td style="">2010/06/09</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td class="sorting_1" tabindex="0">Michelle House</td>
+                                                        <td class="" style="">Integration Specialist</td>
+                                                        <td class="" style="">Sidney</td>
+                                                        <td style="">37</td>
+                                                        <td style="">2011/06/02</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td class="sorting_1" tabindex="0">Michael Silva</td>
+                                                        <td class="" style="">Marketing Designer</td>
+                                                        <td class="" style="">London</td>
+                                                        <td style="">66</td>
+                                                        <td style="">2012/11/27</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td class="sorting_1" tabindex="0">Martena Mccray</td>
+                                                        <td class="" style="">Post-Sales support</td>
+                                                        <td class="" style="">Edinburgh</td>
+                                                        <td style="">46</td>
+                                                        <td style="">2011/03/09</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td class="sorting_1" tabindex="0">Jennifer Chang</td>
+                                                        <td class="" style="">Regional Director</td>
+                                                        <td class="" style="">Singapore</td>
+                                                        <td style="">28</td>
+                                                        <td style="">2010/11/14</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td class="sorting_1" tabindex="0">Jenette Caldwell</td>
+                                                        <td class="" style="">Development Lead</td>
+                                                        <td class="" style="">New York</td>
+                                                        <td style="">30</td>
+                                                        <td style="">2011/09/03</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td class="sorting_1" tabindex="0">Jena Gaines</td>
+                                                        <td class="" style="">Office Manager</td>
+                                                        <td class="" style="">London</td>
+                                                        <td style="">30</td>
+                                                        <td style="">2008/12/19</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td class="sorting_1" tabindex="0">Howard Hatfield</td>
+                                                        <td class="" style="">Office Manager</td>
+                                                        <td class="" style="">San Francisco</td>
+                                                        <td style="">51</td>
+                                                        <td style="">2008/12/16</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td class="sorting_1" tabindex="0">Hope Fuentes</td>
+                                                        <td class="" style="">Secretary</td>
+                                                        <td class="" style="">San Francisco</td>
+                                                        <td style="">41</td>
+                                                        <td style="">2010/02/12</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td tabindex="0" class="sorting_1">Herrod Chandler</td>
+                                                        <td class="" style="">Sales Assistant</td>
+                                                        <td class="" style="">San Francisco</td>
+                                                        <td style="">59</td>
+                                                        <td style="">2012/08/06</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td class="sorting_1" tabindex="0">Haley Kennedy</td>
+                                                        <td class="" style="">Senior Marketing Designer</td>
+                                                        <td class="" style="">London</td>
+                                                        <td style="">43</td>
+                                                        <td style="">2012/12/18</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td class="sorting_1" tabindex="0">Gloria Little</td>
+                                                        <td class="" style="">Systems Administrator</td>
+                                                        <td class="" style="">New York</td>
+                                                        <td style="">59</td>
+                                                        <td style="">2009/04/10</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td class="sorting_1" tabindex="0">Gavin Joyce</td>
+                                                        <td class="" style="">Developer</td>
+                                                        <td class="" style="">Edinburgh</td>
+                                                        <td style="">42</td>
+                                                        <td style="">2010/12/22</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td class="sorting_1" tabindex="0">Gavin Cortez</td>
+                                                        <td class="" style="">Team Leader</td>
+                                                        <td class="" style="">San Francisco</td>
+                                                        <td style="">22</td>
+                                                        <td style="">2008/10/26</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td tabindex="0" class="sorting_1">Garrett Winters</td>
+                                                        <td class="" style="">Accountant</td>
+                                                        <td class="" style="">Tokyo</td>
+                                                        <td style="">63</td>
+                                                        <td style="">2011/07/25</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td class="sorting_1" tabindex="0">Fiona Green</td>
+                                                        <td class="" style="">Chief Operating Officer (COO)</td>
+                                                        <td class="" style="">San Francisco</td>
+                                                        <td style="">48</td>
+                                                        <td style="">2010/03/11</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td class="sorting_1" tabindex="0">Doris Wilder</td>
+                                                        <td class="" style="">Sales Assistant</td>
+                                                        <td class="" style="">Sidney</td>
+                                                        <td style="">23</td>
+                                                        <td style="">2010/09/20</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td class="sorting_1" tabindex="0">Dai Rios</td>
+                                                        <td class="" style="">Personnel Lead</td>
+                                                        <td class="" style="">Edinburgh</td>
+                                                        <td style="">35</td>
+                                                        <td style="">2012/09/26</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td tabindex="0" class="sorting_1">Colleen Hurst</td>
+                                                        <td class="" style="">Javascript Developer</td>
+                                                        <td class="" style="">San Francisco</td>
+                                                        <td style="">39</td>
+                                                        <td style="">2009/09/15</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td class="sorting_1" tabindex="0">Charde Marshall</td>
+                                                        <td class="" style="">Regional Director</td>
+                                                        <td class="" style="">San Francisco</td>
+                                                        <td style="">36</td>
+                                                        <td style="">2008/10/16</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td tabindex="0" class="sorting_1">Cedric Kelly</td>
+                                                        <td class="" style="">Senior Javascript Developer</td>
+                                                        <td class="" style="">Edinburgh</td>
+                                                        <td style="">22</td>
+                                                        <td style="">2012/03/29</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td class="sorting_1" tabindex="0">Caesar Vance</td>
+                                                        <td class="" style="">Pre-Sales Support</td>
+                                                        <td class="" style="">New York</td>
+                                                        <td style="">21</td>
+                                                        <td style="">2011/12/12</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td tabindex="0" class="sorting_1">Brielle Williamson</td>
+                                                        <td class="" style="">Integration Specialist</td>
+                                                        <td class="" style="">New York</td>
+                                                        <td style="">61</td>
+                                                        <td style="">2012/12/02</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td class="sorting_1" tabindex="0">Brenden Wagner</td>
+                                                        <td class="" style="">Software Engineer</td>
+                                                        <td class="" style="">San Francisco</td>
+                                                        <td style="">28</td>
+                                                        <td style="">2011/06/07</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td class="sorting_1" tabindex="0">Bradley Greer</td>
+                                                        <td class="" style="">Software Engineer</td>
+                                                        <td class="" style="">London</td>
+                                                        <td style="">41</td>
+                                                        <td style="">2012/10/13</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td tabindex="0" class="sorting_1">Ashton Cox</td>
+                                                        <td class="" style="">Junior Technical Author</td>
+                                                        <td class="" style="">San Francisco</td>
+                                                        <td style="">66</td>
+                                                        <td style="">2009/01/12</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td class="sorting_1" tabindex="0">Angelica Ramos</td>
+                                                        <td class="" style="">Chief Executive Officer (CEO)</td>
+                                                        <td class="" style="">London</td>
+                                                        <td style="">47</td>
+                                                        <td style="">2009/10/09</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td tabindex="0" class="sorting_1">Airi Satou</td>
+                                                        <td class="" style="">Accountant</td>
+                                                        <td class="" style="">Tokyo</td>
+                                                        <td style="">33</td>
+                                                        <td style="">2008/11/28</td>
+                                                        <td class="text-right" style="">
+                                                            <a href="#" class="btn btn-simple btn-info btn-icon like"><i class="material-icons">favorite</i></a>
+                                                            <a href="#" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">dvr</i></a>
+                                                            <a href="#" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div><div class="row"><div class="col-sm-5"><div class="dataTables_info" id="datatables_info" role="status" aria-live="polite">Showing 1 to 40 of 40 entries</div></div><div class="col-sm-7"><div class="dataTables_paginate paging_full_numbers" id="datatables_paginate"><ul class="pagination"><li class="paginate_button first disabled" id="datatables_first"><a href="#" aria-controls="datatables" data-dt-idx="0" tabindex="0">First</a></li><li class="paginate_button previous disabled" id="datatables_previous"><a href="#" aria-controls="datatables" data-dt-idx="1" tabindex="0">Previous</a></li><li class="paginate_button active"><a href="#" aria-controls="datatables" data-dt-idx="2" tabindex="0">1</a></li><li class="paginate_button next disabled" id="datatables_next"><a href="#" aria-controls="datatables" data-dt-idx="3" tabindex="0">Next</a></li><li class="paginate_button last disabled" id="datatables_last"><a href="#" aria-controls="datatables" data-dt-idx="4" tabindex="0">Last</a></li></ul></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end content-->
+                    </div>
+                    <!--  end card  -->
+                </div>
+                <!-- end col-md-12 -->
+            </div>
+            <!-- end row -->
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container-fluid">
+            <nav class="pull-left">
+                <ul>
+                    <li>
+                        <a href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Company
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Blog
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="copyright pull-right">
+                ©
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>2017
+                <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
+            </p>
+        </div>
+    </footer>
+    <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; height: 667px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 169px;"></div></div>
+</div>
