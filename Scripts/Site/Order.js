@@ -1,7 +1,44 @@
 ﻿$(document).ready(function () {
-    function formatCurrency(value) {
-        return "$" + value.toFixed(2);
+    //function AppViewModel() {
+    //    var self = this;
+
+    //    self.people = ko.observableArray([
+    //        { name: 'Bert' },
+    //        { name: 'Charles' },
+    //        { name: 'Denise' }
+    //    ]);
+
+    //    self.addPerson = function () {
+    //        self.people.push({ name: "New at " + new Date() });
+    //    };
+
+    //    self.removePerson = function () {
+    //        self.people.remove(this);
+    //    }
+    //}
+
+    //ko.applyBindings(new AppViewModel());
+    function AppViewModel() {
+        var self = this;
+
+        self.products = ko.observableArray([
+            { qty: '', profileNum: '', itemNum: '', itemDescription: '', color: '', price: '' }
+        ]);
+
+        self.addProduct = function () {
+            self.products.push({ qty: '', profileNum: '', itemNum: '', itemDescription: '', color: '', price: '' });
+        };
+
+        self.removeProduct = function () {
+            self.products.remove(this);
+        }
     }
+
+    ko.applyBindings(new AppViewModel());
+
+    //function formatCurrency(value) {
+    //    return "$" + value.toFixed(2);
+    //}
 
     //qty: "",
     //            profileNum: ko.observableArray([]),
@@ -13,25 +50,25 @@
     //            //    return this.price * this.qty;
     //            //}, this)
 
-    var Products = function () {
-        var self = this;
-        self.qty = ko.observable();
-        self.profileNum = ko.observableArray([]);
-        self.itemNum = ko.observableArray(['0015', '0016', '0017', '0018', '0019']);
-        self.color = ko.observableArray(['Red', 'Orange', 'Green', 'Blue', 'Purple']);
-        self.price = ko.observable(372.35).extend({ number: true });
-        //self.subtotal = ko.computed(function () {
-        //    return self.product() ? self.price * parseInt("0" + self.qty(), 10) : 0;
+    //function Products() {
+    //    var self = this;
+    //    self.qty = ko.observable();
+    //    self.profileNum = ko.observableArray([]);
+    //    self.itemNum = ko.observableArray(['0015', '0016', '0017', '0018', '0019']);
+    //    self.color = ko.observableArray(['Red', 'Orange', 'Green', 'Blue', 'Purple']);
+    //    self.price = ko.observable(372.35).extend({ number: true });
+    //self.subtotal = ko.computed(function () {
+    //    return self.product() ? self.price * parseInt("0" + self.qty(), 10) : 0;
     //}
     //);
 
-        // Whenever the category changes, reset the product selection
-        //self.category.subscribe(function () {
-        //    self.product(undefined);
-        //});
-        self.addProduct = function () { self.lines.push(new Products()) };
-        self.removeProduct = function (line) { self.lines.remove(line) };
-    };
+    // Whenever the category changes, reset the product selection
+    //self.category.subscribe(function () {
+    //    self.product(undefined);
+    //});
+    //    self.addProduct = function () { self.lines.push(new Products()) };
+    //    self.removeProduct = function (line) { self.lines.remove(line) };
+    //};
 
     //var Cart = function () {
     //    // Stores an array of lines, and from these, can work out the grandTotal
@@ -56,8 +93,6 @@
     //        alert("Could now send this to server: " + JSON.stringify(dataToSave));
     //    };
     //};
-
-    ko.applyBindings(new Products());
     //ko.extenders.number = function (observable, opt) {
     //    return ko.computed({
     //        read: observable,

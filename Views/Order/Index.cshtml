@@ -1,7 +1,6 @@
 ﻿@section scripts{
     @Scripts.Render("~/bundles/order")
 }
-
 <div class="content">
     <div class="container-fluid">
         <div class="row">
@@ -11,13 +10,14 @@
                         <div class="card-header card-header-text" data-background-color="green">
                             <h4 class="card-title">Products</h4>
                         </div>
-                        <div class="card-content" data-bind="foreach: people">
+                        <!-- ko foreach: products -->
+                        <div class="card-content">
                             <div class="row">
                                 <label class="col-sm-2 label-on-left">Qty</label>
                                 <div class="col-sm-10">
                                     <div class="form-group label-floating is-empty">
                                         <label class="control-label"></label>
-                                        <input type="text" class="form-control" data-bind="value: name">
+                                        <input type="text" class="form-control" data-bind="value: qty">
                                         <span class="material-input"></span>
                                     </div>
                                 </div>
@@ -72,12 +72,14 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <!-- /ko -->
+                        <div class="card-content">
                             <div class="row">
                                 <label class="col-sm-2 label-on-left"></label>
                                 <div class="col-sm-10">
-                                    <h2 class="right">Total: $<span data-bind="text: total"></span></h2>
-                                    <a data-bind="click: addProduct">Add</a>
-                                    <button class="btn btn-round addProduct" data-bind="click: $root.addProduct">Add Product</button>
+                                    <h2 class="right">Total: $<span></span></h2>
+                                    <button type="button" class="btn btn-round addProduct" data-bind="click: addProduct">Add Product</button>
                                 </div>
                             </div>
                         </div>
