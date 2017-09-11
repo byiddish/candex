@@ -1,3 +1,9 @@
 ﻿.addProduct{
     margin-top: 20px;
 }
+
+@media (min-width: 960px) {
+    .card .card-content {
+        padding-right: 12.5em;
+    }
+}

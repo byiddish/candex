@@ -153,6 +153,7 @@
     <Content Include="assets\img\faces\card-profile1-square.jpg" />
     <Content Include="assets\img\faces\card-profile2-square.jpg" />
     <Content Include="assets\img\faces\marc.jpg" />
+    <Content Include="assets\img\faces\Rameed.jpeg" />
     <Content Include="assets\img\favicon.png" />
     <Content Include="assets\img\flags\AD.png" />
     <Content Include="assets\img\flags\AE.png" />
@@ -320,6 +321,10 @@
     <Content Include="Content\Icons\x-mark-128.ico" />
     <Content Include="Content\Images\CandexLogo.png" />
     <Content Include="Content\Icons\rotation.png" />
+    <Content Include="Content\Images\furniture1.jpg" />
+    <Content Include="Content\Images\furniture2.jpg" />
+    <Content Include="Content\Images\furniture3.jpg" />
+    <Content Include="Content\Images\furniture4.jpg" />
     <Content Include="Content\Site\Fonts.css" />
     <Content Include="Content\Site\Order.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
