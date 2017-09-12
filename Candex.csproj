@@ -308,6 +308,7 @@
     <Content Include="Content\Icons\ic_gavel_black_24px.svg" />
     <Content Include="Content\Icons\ic_history_black_24px.svg" />
     <Content Include="Content\Icons\ic_hourglass_empty_black_24px.svg" />
+    <Content Include="Content\Icons\ic_keyboard_arrow_down_black_24px.svg" />
     <Content Include="Content\Icons\ic_local_shipping_black_24px.svg" />
     <Content Include="Content\Icons\ic_notifications_black_24px.svg" />
     <Content Include="Content\Icons\ic_people_white_24px.svg" />

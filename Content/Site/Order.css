@@ -1,6 +1,101 @@
-﻿.addProduct{
+﻿.addProduct {
     margin-top: 20px;
 }
+
+.productTable {
+}
+
+.table-shopping .td-name {
+    min-width: initial;
+}
+
+.table .th-description {
+    max-width: initial;
+}
+
+.productTable .form-control, .productTable .form-group .form-control {
+    border: 0;
+    background-image: none;
+    background-size: 0;
+}
+
+.productTable textarea {
+    width: 100%;
+    max-width: 100%;
+}
+
+.productImg {
+    width: 10%;
+    max-width: 10% !important;
+}
+
+.profile {
+    width: 10%;
+    max-width: 10% !important;
+}
+
+.item {
+    width: 10%;
+    max-width: 10% !important;
+}
+
+.color {
+    width: 10%;
+    max-width: 10% !important;
+}
+
+.description {
+    width: 20%;
+    max-width: 20% !important;
+}
+
+.price {
+    width: 5%;
+    max-width: 5% !important;
+}
+
+.qty {
+    width: 5%;
+    max-width: 5% !important;
+}
+
+.amount {
+    width: 5%;
+    max-width: 5% !important;
+}
+
+.remove {
+    width: 5%;
+    max-width: 5% !important;
+}
+
+.select {
+    position: relative;
+}
+
+    .select select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+    }
+
+    .select img {
+        position: absolute;
+        width: 22.5px;
+        opacity: .65;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        pointer-events: none;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity .2s ease-out;
+    }
+
+    .select:hover img {
+        opacity: .65;
+    }
 
 @media (min-width: 960px) {
     .card .card-content {

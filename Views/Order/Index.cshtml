@@ -12,17 +12,19 @@
                     <h4 class="card-title">Product Cart</h4>
                     <div class="card-content">
                         <div class="table-responsive">
-                            <table class="table table-shopping">
+                            <table class="table table-shopping productTable">
                                 <thead>
                                     <tr>
-                                        <th class="text-center"></th>
-                                        <th>Product</th>
-                                        <th class="th-description">Color</th>
-                                        <th class="th-description">Size</th>
-                                        <th class="text-right">Price</th>
-                                        <th class="text-right">Qty</th>
-                                        <th class="text-right">Amount</th>
-                                        <th></th>
+                                        <th class="text-center productImg"></th>
+                                        <th class="profile">Profile</th>
+                                        <th class="th-description item">Item</th>
+                                        <th class="th-description color">Top Color</th>
+                                        <th class="th-description color">Bottom Color</th>
+                                        <th class="th-description description">Description</th>
+                                        <th class="text-right price">Price</th>
+                                        <th class="text-right qty">Qty</th>
+                                        <th class="text-right amount">Amount</th>
+                                        <th class="remove"></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -37,24 +39,75 @@
                                             @*<a href="#jacket">Spring Jacket</a>
                                                 <br>
                                                 <small>by Dolce&amp;Gabbana</small>*@
-                                            <select class="form-control">
-                                                <option>Red</option>
-                                                <option>Green</option>
-                                                <option>Yellow</option>
-                                                <option>Red</option>
-                                                <option>Green</option>
-                                                <option>Yellow</option>
-                                                <option>Red</option>
-                                                <option>Green</option>
-                                                <option>Yellow</option>
-                                            </select>
-                                            <span class="material-input"></span>
+                                            <div class="select">
+                                                <select class="form-control">
+                                                    <option>Red</option>
+                                                    <option>Green</option>
+                                                    <option>Yellow</option>
+                                                    <option>Red</option>
+                                                    <option>Green</option>
+                                                    <option>Yellow</option>
+                                                    <option>Red</option>
+                                                    <option>Green</option>
+                                                    <option>Yellow</option>
+                                                </select>
+                                                <span class="material-input"></span>
+                                                <img src="~/Content/Icons/ic_keyboard_arrow_down_black_24px.svg" />
+                                            </div>
                                         </td>
                                         <td>
-                                            Red
+                                            <div class="select">
+                                                <select class="form-control">
+                                                    <option>Red</option>
+                                                    <option>Green</option>
+                                                    <option>Yellow</option>
+                                                    <option>Red</option>
+                                                    <option>Green</option>
+                                                    <option>Yellow</option>
+                                                    <option>Red</option>
+                                                    <option>Green</option>
+                                                    <option>Yellow</option>
+                                                </select>
+                                                <span class="material-input"></span>
+                                                <img src="~/Content/Icons/ic_keyboard_arrow_down_black_24px.svg" />
+                                            </div>
                                         </td>
                                         <td>
-                                            M
+                                            <div class="select">
+                                                <select class="form-control">
+                                                    <option>Red</option>
+                                                    <option>Green</option>
+                                                    <option>Yellow</option>
+                                                    <option>Red</option>
+                                                    <option>Green</option>
+                                                    <option>Yellow</option>
+                                                    <option>Red</option>
+                                                    <option>Green</option>
+                                                    <option>Yellow</option>
+                                                </select>
+                                                <span class="material-input"></span>
+                                                <img src="~/Content/Icons/ic_keyboard_arrow_down_black_24px.svg" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="select">
+                                                <select class="form-control">
+                                                    <option>Red</option>
+                                                    <option>Green</option>
+                                                    <option>Yellow</option>
+                                                    <option>Red</option>
+                                                    <option>Green</option>
+                                                    <option>Yellow</option>
+                                                    <option>Red</option>
+                                                    <option>Green</option>
+                                                    <option>Yellow</option>
+                                                </select>
+                                                <span class="material-input"></span>
+                                                <img src="~/Content/Icons/ic_keyboard_arrow_down_black_24px.svg" />
+                                            </div>
+                                        </td>
+                                        <td class="td-name">
+                                            <textarea></textarea>
                                         </td>
                                         <td class="td-number text-right">
                                             <small>€</small>549
@@ -78,104 +131,7 @@
                                     </tr>
                                     <!-- /ko -->
                                     <tr>
-                                        <td>
-                                            <div class="img-container">
-                                                <img src="~/Content/Images/furniture2.jpg" />
-                                            </div>
-                                        </td>
-                                        <td class="td-name">
-                                            @*<a href="#jacket">Spring Jacket</a>
-            <br>
-            <small>by Dolce&amp;Gabbana</small>*@
-                                            <select class="form-control">
-                                                <option>Red</option>
-                                                <option>Green</option>
-                                                <option>Yellow</option>
-                                                <option>Red</option>
-                                                <option>Green</option>
-                                                <option>Yellow</option>
-                                                <option>Red</option>
-                                                <option>Green</option>
-                                                <option>Yellow</option>
-                                            </select>
-                                            <span class="material-input"></span>
-                                        </td>
-                                        <td>
-                                            Purple
-                                        </td>
-                                        <td>
-                                            M
-                                        </td>
-                                        <td class="td-number">
-                                            <small>€</small>499
-                                        </td>
-                                        <td class="td-number">
-                                            2
-                                            <div class="btn-group">
-                                                <button class="btn btn-round btn-info btn-xs"> <i class="material-icons">remove</i> <div class="ripple-container"></div></button>
-                                                <button class="btn btn-round btn-info btn-xs"> <i class="material-icons">add</i> <div class="ripple-container"></div></button>
-                                            </div>
-                                        </td>
-                                        <td class="td-number">
-                                            <small>€</small>998
-                                        </td>
-                                        <td class="td-actions">
-                                            <button type="button" rel="tooltip" data-placement="left" title="" class="btn btn-simple" data-original-title="Remove item">
-                                                <i class="material-icons">close</i>
-                                                <div class="ripple-container"></div>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="img-container">
-                                                <img src="~/Content/Images/furniture3.jpg" />
-                                            </div>
-                                        </td>
-                                        <td class="td-name">
-                                            @*<a href="#jacket">Spring Jacket</a>
-            <br>
-            <small>by Dolce&amp;Gabbana</small>*@
-                                            <select class="form-control">
-                                                <option>Red</option>
-                                                <option>Green</option>
-                                                <option>Yellow</option>
-                                                <option>Red</option>
-                                                <option>Green</option>
-                                                <option>Yellow</option>
-                                                <option>Red</option>
-                                                <option>Green</option>
-                                                <option>Yellow</option>
-                                            </select>
-                                            <span class="material-input"></span>
-                                        </td>
-                                        <td>
-                                            White
-                                        </td>
-                                        <td>
-                                            XL
-                                        </td>
-                                        <td class="td-number">
-                                            <small>€</small>799
-                                        </td>
-                                        <td class="td-number">
-                                            1
-                                            <div class="btn-group">
-                                                <button class="btn btn-round btn-info btn-xs"> <i class="material-icons">remove</i> <div class="ripple-container"></div></button>
-                                                <button class="btn btn-round btn-info btn-xs"> <i class="material-icons">add</i> </button>
-                                            </div>
-                                        </td>
-                                        <td class="td-number">
-                                            <small>€</small>799
-                                        </td>
-                                        <td class="td-actions">
-                                            <button type="button" rel="tooltip" data-placement="left" title="" class="btn btn-simple" data-original-title="Remove item">
-                                                <i class="material-icons">close</i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="5"></td>
+                                        <td colspan="7"></td>
                                         <td class="td-total">
                                             Total
                                         </td>
@@ -185,7 +141,7 @@
                                         <td></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="6"></td>
+                                        <td colspan="8"></td>
                                         <td colspan="2" class="text-right">
                                             <button type="button" class="btn btn-round addProduct" data-bind="click: addProduct">Add Product</button>
                                             <button type="button" class="btn btn-info btn-round">Complete Order <i class="material-icons">keyboard_arrow_right</i></button>
