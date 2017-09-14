@@ -1,4 +1,6 @@
 ﻿@section scripts{
+    @Scripts.Render("~/bundles/autosize")
+    @Scripts.Render("~/bundles/order.ui")
     @Scripts.Render("~/bundles/order")
 }
 <div class="content">
@@ -18,8 +20,8 @@
                                         <th class="text-center productImg"></th>
                                         <th class="profile">Profile</th>
                                         <th class="th-description item">Item</th>
-                                        <th class="th-description color">Top Color</th>
-                                        <th class="th-description color">Bottom Color</th>
+                                        <th class="th-description color">Top</th>
+                                        <th class="th-description color">Bottom</th>
                                         <th class="th-description description">Description</th>
                                         <th class="text-right price">Price</th>
                                         <th class="text-right qty">Qty</th>
@@ -107,26 +109,36 @@
                                             </div>
                                         </td>
                                         <td class="td-name">
-                                            <textarea></textarea>
+                                            <textarea class="descriptionText form-control"></textarea>
                                         </td>
                                         <td class="td-number text-right">
-                                            <small>€</small>549
-                                        </td>
-                                        <td class="td-number">
-                                            1
-                                            <div class="btn-group">
-                                                <button class="btn btn-round btn-info btn-xs"> <i class="material-icons">remove</i> <div class="ripple-container"></div></button>
-                                                <button class="btn btn-round btn-info btn-xs"> <i class="material-icons">add</i> <div class="ripple-container"></div></button>
+                                            <div class="form-group">
+                                                <small>€</small>549
                                             </div>
                                         </td>
                                         <td class="td-number">
-                                            <small>€</small>549
+                                            <div class="form-group">
+                                                1
+                                                <div class="btn-group">
+                                                    <button class="btn btn-round btn-info btn-xs">
+                                                        <img class="removeAddImg" src="~/Content/Icons/ic_remove_white_24px.svg" /><div class="ripple-container"></div>
+                                                    </button>
+                                                    <button class="btn btn-round btn-info btn-xs"> <img class="removeAddImg" src="~/Content/Icons/ic_add_white_24px.svg" /> <div class="ripple-container"></div></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="td-number">
+                                            <div class="form-group">
+                                                <small>€</small>549
+                                            </div>
                                         </td>
                                         <td class="td-actions">
-                                            <button type="button" rel="tooltip" data-placement="left" title="" class="btn btn-simple" data-original-title="Remove item">
-                                                <i class="material-icons">close</i>
-                                                <div class="ripple-container"></div>
-                                            </button>
+                                            <div class="form-group">
+                                                <button type="button" rel="tooltip" data-placement="left" title="" class="btn btn-simple" data-original-title="Remove item">
+                                                    <img class="removeAddImg grey" src="~/Content/Icons/ic_clear_black_24px.svg" />
+                                                    <div class="ripple-container"></div>
+                                                </button>
+                                            </div>
                                         </td>
                                     </tr>
                                     <!-- /ko -->
@@ -144,206 +156,13 @@
                                         <td colspan="8"></td>
                                         <td colspan="2" class="text-right">
                                             <button type="button" class="btn btn-round addProduct" data-bind="click: addProduct">Add Product</button>
-                                            <button type="button" class="btn btn-info btn-round">Complete Order <i class="material-icons">keyboard_arrow_right</i></button>
+                                            <button type="button" class="btn btn-info btn-round">Complete Order <img class="completeImg" src="~/Content/Icons/ic_keyboard_arrow_right_white_24px.svg" /></button>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div class="card">
-                    <form method="get" action="/" class="form-horizontal">
-                        <div class="card-header card-header-text" data-background-color="green">
-                            <h4 class="card-title">Products</h4>
-                        </div>
-                        <!-- ko foreach: products -->
-                        <div class="card-content">
-                            <div class="row">
-                                <label class="col-sm-2 label-on-left">Qty</label>
-                                <div class="col-sm-10">
-                                    <div class="form-group label-floating is-empty">
-                                        <label class="control-label"></label>
-                                        <input type="text" class="form-control" data-bind="value: qty">
-                                        <span class="material-input"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <label class="col-sm-2 label-on-left">Profile #</label>
-                                <div class="col-sm-10">
-                                    <div class="form-group label-floating is-empty">
-                                        <label class="control-label"></label>
-                                        <select class="form-control" data-bind="options: profileNum, optionsCaption: 'Choose...'"></select>
-                                        <span class="material-input"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <label class="col-sm-2 label-on-left">Item #</label>
-                                <div class="col-sm-10">
-                                    <div class="form-group label-floating is-empty">
-                                        <label class="control-label"></label>
-                                        <select class="form-control" data-bind="options: itemNum, optionsCaption: 'Choose...'"></select>
-                                        <span class="material-input"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <label class="col-sm-2 label-on-left">Color</label>
-                                <div class="col-sm-10">
-                                    <div class="form-group label-floating is-empty">
-                                        <label class="control-label"></label>
-                                        <select class="form-control" data-bind="options: color, optionsCaption: 'Choose...'"></select>
-                                        <span class="material-input"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <label class="col-sm-2 label-on-left">Item #</label>
-                                <div class="col-sm-10">
-                                    <div class="form-group label-floating is-empty">
-                                        <label class="control-label"></label>
-                                        <textarea class="form-control" placeholder="Item Description" data-bind="value: itemDescription"></textarea>
-                                        <span class="material-input"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <label class="col-sm-2 label-on-left">Price</label>
-                                <div class="col-sm-10">
-                                    <div class="form-group label-floating is-empty">
-                                        <label class="control-label"></label>
-                                        <input class="form-control" placeholder="Price" type="number" data-bind="value: price">
-                                        <span class="material-input"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /ko -->
-                        <div class="card-content">
-                            <div class="row">
-                                <label class="col-sm-2 label-on-left"></label>
-                                <div class="col-sm-10">
-                                    <h2 class="right">Total: $<span></span></h2>
-                                    <button type="button" class="btn btn-round addProduct" data-bind="click: addProduct">Add Product</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    <form method="get" action="/" class="form-horizontal">
-                        <div class="card-header card-header-text" data-background-color="green">
-                            <h4 class="card-title">Order Details</h4>
-                        </div>
-                        <div class="card-content">
-                            <div class="row">
-                                <label class="col-sm-2 label-on-left">Qty</label>
-                                <div class="col-sm-10">
-                                    <div class="form-group label-floating is-empty">
-                                        <label class="control-label"></label>
-                                        <input type="text" class="form-control" value="">
-                                        <span class="material-input"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <label class="col-sm-2 label-on-left">Profile #</label>
-                                <div class="col-sm-10">
-                                    <div class="form-group label-floating is-empty">
-                                        <label class="control-label"></label>
-                                        <select class="form-control" value="">
-                                            <option>Red</option>
-                                            <option>Green</option>
-                                            <option>Yellow</option>
-                                            <option>Red</option>
-                                            <option>Green</option>
-                                            <option>Yellow</option>
-                                            <option>Red</option>
-                                            <option>Green</option>
-                                            <option>Yellow</option>
-                                        </select>
-                                        <span class="material-input"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <label class="col-sm-2 label-on-left">Item #</label>
-                                <div class="col-sm-10">
-                                    <div class="form-group label-floating is-empty">
-                                        <label class="control-label"></label>
-                                        <select class="form-control" value="">
-                                            <option>Red</option>
-                                            <option>Green</option>
-                                            <option>Yellow</option>
-                                            <option>Red</option>
-                                            <option>Green</option>
-                                            <option>Yellow</option>
-                                            <option>Red</option>
-                                            <option>Green</option>
-                                            <option>Yellow</option>
-                                        </select>
-                                        <span class="material-input"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <label class="col-sm-2 label-on-left">Color</label>
-                                <div class="col-sm-10">
-                                    <div class="form-group label-floating is-empty">
-                                        <label class="control-label"></label>
-                                        <select class="form-control" value="">
-                                            <option>Red</option>
-                                            <option>Green</option>
-                                            <option>Yellow</option>
-                                            <option>Red</option>
-                                            <option>Green</option>
-                                            <option>Yellow</option>
-                                            <option>Red</option>
-                                            <option>Green</option>
-                                            <option>Yellow</option>
-                                        </select>
-                                        <span class="material-input"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <label class="col-sm-2 label-on-left">Item #</label>
-                                <div class="col-sm-10">
-                                    <div class="form-group label-floating is-empty">
-                                        <label class="control-label"></label>
-                                        <textarea class="form-control" placeholder="Item Description" value=""></textarea>
-                                        <span class="material-input"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <label class="col-sm-2 label-on-left">Price</label>
-                                <div class="col-sm-10">
-                                    <div class="form-group label-floating is-empty">
-                                        <label class="control-label"></label>
-                                        <input class="form-control" placeholder="Price" value="">
-                                        <span class="material-input"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <label class="col-sm-2 label-on-left"></label>
-                                <div class="col-sm-10">
-                                    <h2 class="right">Total: $0.00</h2>
-                                    <button class="btn btn-round addProduct">Add Product</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>

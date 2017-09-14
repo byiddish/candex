@@ -294,6 +294,7 @@
     <Content Include="Content\Fonts\Roboto-Regular-webfont.svg" />
     <Content Include="Content\Icons\iconUpdate.png" />
     <Content Include="Content\Icons\ic_account_balance_white_24px.svg" />
+    <Content Include="Content\Icons\ic_add_white_24px.svg" />
     <Content Include="Content\Icons\ic_assessment_white_24px.svg" />
     <Content Include="Content\Icons\ic_build_black_24px.svg" />
     <Content Include="Content\Icons\ic_clear_black_24px.svg" />
@@ -309,10 +310,12 @@
     <Content Include="Content\Icons\ic_history_black_24px.svg" />
     <Content Include="Content\Icons\ic_hourglass_empty_black_24px.svg" />
     <Content Include="Content\Icons\ic_keyboard_arrow_down_black_24px.svg" />
+    <Content Include="Content\Icons\ic_keyboard_arrow_right_white_24px.svg" />
     <Content Include="Content\Icons\ic_local_shipping_black_24px.svg" />
     <Content Include="Content\Icons\ic_notifications_black_24px.svg" />
     <Content Include="Content\Icons\ic_people_white_24px.svg" />
     <Content Include="Content\Icons\ic_person_black_24px.svg" />
+    <Content Include="Content\Icons\ic_remove_white_24px.svg" />
     <Content Include="Content\Icons\ic_rv_hookup_black_24px.svg" />
     <Content Include="Content\Icons\ic_snooze_black_24px.svg" />
     <Content Include="Content\Icons\ic_thumb_up_black_24px.svg" />
@@ -440,6 +443,7 @@
     <Content Include="assets\sass\material-dashboard\_typography.scss" />
     <Content Include="assets\sass\material-dashboard\_variables.scss" />
     <None Include="Scripts\Libs\Jquery\jquery-1.8.2.intellisense.js" />
+    <Content Include="Scripts\Libs\Autosize\autosize.js" />
     <Content Include="Scripts\Libs\Knockout\knockout-3.4.2.debug.js" />
     <Content Include="Scripts\Libs\Knockout\knockout-3.4.2.js" />
     <Content Include="Scripts\Libs\Jquery\jquery-1.8.2.js" />
@@ -456,6 +460,7 @@
     <Content Include="Scripts\Libs\Modernizr\modernizr-2.6.2.js" />
     <Content Include="Scripts\Libs\Jquery\_references.js" />
     <Content Include="Scripts\Site\Order.js" />
+    <Content Include="Scripts\Site\Order.ui.js" />
     <Content Include="Scripts\Site\Site.ui.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

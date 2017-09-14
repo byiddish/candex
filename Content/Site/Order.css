@@ -2,7 +2,16 @@
     margin-top: 20px;
 }
 
-.productTable {
+.productTable td {
+    vertical-align: top !important;
+}
+
+.removeAddImg, .completeImg {
+    width: 17px !important;
+}
+
+.grey {
+    opacity: .65;
 }
 
 .table-shopping .td-name {
@@ -97,8 +106,6 @@
         opacity: .65;
     }
 
-@media (min-width: 960px) {
-    .card .card-content {
-        padding-right: 12.5em;
-    }
+.descriptionText {
+
 }

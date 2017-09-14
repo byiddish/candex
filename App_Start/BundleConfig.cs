@@ -21,8 +21,14 @@ namespace Candex
             bundles.Add(new ScriptBundle("~/bundles/knockout").Include(
                        "~/Scripts/Libs/Knockout/knockout-3.4.2.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/autosize").Include(
+                       "~/Scripts/Libs/Autosize/autosize.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/site.ui").Include(
                         "~/Scripts/Site/Site.ui.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/order.ui").Include(
+            "~/Scripts/Site/Order.ui.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/order").Include(
                         "~/Scripts/Site/Order.js"));
