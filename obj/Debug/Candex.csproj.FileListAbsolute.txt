@@ -23,3 +23,4 @@ C:\Users\Barry\documents\visual studio 2013\Projects\Candex\Candex\bin\System.We
 C:\Users\Barry\documents\visual studio 2013\Projects\Candex\Candex\bin\System.Web.WebPages.Razor.xml
 C:\Users\Barry\documents\visual studio 2013\Projects\Candex\Candex\obj\Debug\Candex.dll
 C:\Users\Barry\documents\visual studio 2013\Projects\Candex\Candex\obj\Debug\Candex.pdb
+C:\Users\Barry\documents\visual studio 2013\Projects\Candex\Candex\obj\Debug\Candex.csprojResolveAssemblyReference.cache

@@ -18,7 +18,7 @@
                                 <thead>
                                     <tr>
                                         <th class="text-center productImg"></th>
-                                        <th class="profile">Profile</th>
+                                        <th class="th-description profile">Profile</th>
                                         <th class="th-description item">Item</th>
                                         <th class="th-description color">Top</th>
                                         <th class="th-description color">Bottom</th>
@@ -31,18 +31,15 @@
                                 </thead>
                                 <tbody>
                                     <!-- ko foreach: products -->
-                                    <tr>
-                                        <td>
+                                    <tr class="productRow">
+                                        <td class="text-center productImg">
                                             <div class="img-container">
                                                 <img src="../Content/Images/furniture1.jpg" />
                                             </div>
                                         </td>
-                                        <td class="td-name">
-                                            @*<a href="#jacket">Spring Jacket</a>
-                                                <br>
-                                                <small>by Dolce&amp;Gabbana</small>*@
+                                        <td class="th-description profile">
                                             <div class="select">
-                                                <select class="form-control">
+                                                <select>
                                                     <option>Red</option>
                                                     <option>Green</option>
                                                     <option>Yellow</option>
@@ -57,9 +54,9 @@
                                                 <img src="~/Content/Icons/ic_keyboard_arrow_down_black_24px.svg" />
                                             </div>
                                         </td>
-                                        <td>
+                                        <td class="th-description item">
                                             <div class="select">
-                                                <select class="form-control">
+                                                <select>
                                                     <option>Red</option>
                                                     <option>Green</option>
                                                     <option>Yellow</option>
@@ -74,9 +71,9 @@
                                                 <img src="~/Content/Icons/ic_keyboard_arrow_down_black_24px.svg" />
                                             </div>
                                         </td>
-                                        <td>
+                                        <td class="th-description color">
                                             <div class="select">
-                                                <select class="form-control">
+                                                <select>
                                                     <option>Red</option>
                                                     <option>Green</option>
                                                     <option>Yellow</option>
@@ -91,9 +88,9 @@
                                                 <img src="~/Content/Icons/ic_keyboard_arrow_down_black_24px.svg" />
                                             </div>
                                         </td>
-                                        <td>
+                                        <td class="th-description color">
                                             <div class="select">
-                                                <select class="form-control">
+                                                <select>
                                                     <option>Red</option>
                                                     <option>Green</option>
                                                     <option>Yellow</option>
@@ -108,37 +105,29 @@
                                                 <img src="~/Content/Icons/ic_keyboard_arrow_down_black_24px.svg" />
                                             </div>
                                         </td>
-                                        <td class="td-name">
-                                            <textarea class="descriptionText form-control"></textarea>
+                                        <td class="th-description description">
+                                            <textarea class="descriptionText"></textarea>
                                         </td>
-                                        <td class="td-number text-right">
-                                            <div class="form-group">
-                                                <small>€</small>549
+                                        <td class="text-right price">
+                                            <small>€</small>549
+                                        </td>
+                                        <td class="text-right qty">
+                                            1
+                                            <div class="btn-group">
+                                                <button class="btn btn-round btn-info btn-xs">
+                                                    <img class="removeAddImg" src="~/Content/Icons/ic_remove_white_24px.svg" /><div class="ripple-container"></div>
+                                                </button>
+                                                <button class="btn btn-round btn-info btn-xs"> <img class="removeAddImg" src="~/Content/Icons/ic_add_white_24px.svg" /> <div class="ripple-container"></div></button>
                                             </div>
                                         </td>
-                                        <td class="td-number">
-                                            <div class="form-group">
-                                                1
-                                                <div class="btn-group">
-                                                    <button class="btn btn-round btn-info btn-xs">
-                                                        <img class="removeAddImg" src="~/Content/Icons/ic_remove_white_24px.svg" /><div class="ripple-container"></div>
-                                                    </button>
-                                                    <button class="btn btn-round btn-info btn-xs"> <img class="removeAddImg" src="~/Content/Icons/ic_add_white_24px.svg" /> <div class="ripple-container"></div></button>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="td-number">
-                                            <div class="form-group">
-                                                <small>€</small>549
-                                            </div>
+                                        <td class="td-number text-right amount">
+                                            <small>€</small>549
                                         </td>
                                         <td class="td-actions">
-                                            <div class="form-group">
-                                                <button type="button" rel="tooltip" data-placement="left" title="" class="btn btn-simple" data-original-title="Remove item">
-                                                    <img class="removeAddImg grey" src="~/Content/Icons/ic_clear_black_24px.svg" />
-                                                    <div class="ripple-container"></div>
-                                                </button>
-                                            </div>
+                                            <button type="button" rel="tooltip" data-placement="left" title="" class="btn btn-simple" data-original-title="Remove item">
+                                                <img class="removeAddImg grey" src="~/Content/Icons/ic_clear_black_24px.svg" />
+                                                <div class="ripple-container"></div>
+                                            </button>
                                         </td>
                                     </tr>
                                     <!-- /ko -->
